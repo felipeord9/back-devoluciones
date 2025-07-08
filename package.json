@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "2.5.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js ",
+    "dev": "nodemon src/index.js",
+    "migrations:generate": "sequelize-cli migration:generate --name",
+    "migrations:run": "sequelize-cli db:migrate",
+    "migrations:revert": "sequelize-cli db:migrate:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "10.0.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "1.20.2",
+    "cors": "2.8.5",
+    "dotenv": "16.1.4",
+    "express": "4.18.2",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.2.0",
+    "html-pdf": "^3.0.1",
+    "jsonwebtoken": "9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "6.9.3",
+    "passport": "^0.6.0",
+    "passport-jwt": "4.0.1",
+    "passport-local": "1.0.0",
+    "path": "^0.12.7",
+    "pg": "8.11.0",
+    "sequelize": "6.32.0",
+    "sequelize-cli": "6.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
