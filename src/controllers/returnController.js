@@ -48,7 +48,7 @@ const findOneReturn = async (req, res, next) => {
   try {
     const { params: { id }} = req
     const data = await ReturnService.finOne(id)
-
+    console.log(data.items)
     res.status(200).json({
       message: 'OK',
       data

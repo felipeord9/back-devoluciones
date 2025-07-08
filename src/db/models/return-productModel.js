@@ -23,7 +23,7 @@ const ReturnProductSchema = {
     allowNull: false,
     field: 'Return_id',
     references: {
-      model: RETURN_PRODUCT_TABLE,
+      model: RETURN_TABLE,
       key: 'id'
     },
     onUpdate: 'CASCADE',
