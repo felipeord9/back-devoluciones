@@ -122,7 +122,9 @@ const findByAgencias = () => {
 const findByAutorizadas = () => {
   const order = models.Return.findAll({
     where: {
-      state: 'Autorizado'
+      state: {
+        [Op.in]:['Autorizado', 'Recogido', 'Finalizado']
+      } 
     },
     include: [
       "items",
