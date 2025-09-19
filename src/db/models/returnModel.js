@@ -143,6 +143,16 @@ const ReturnSchema = {
     type: DataTypes.BOOLEAN,
     allowNull: true,
   },
+  cancelReason: {
+    type: DataTypes.STRING,
+    allowNull: true,
+    field: "cancel_reason",
+  },
+  cancelDate: {
+    type: DataTypes.DATE,
+    allowNull: true,
+    field: "cancel_date",
+  },
 };
 
 class Return extends Model {
