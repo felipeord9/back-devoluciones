@@ -153,6 +153,11 @@ const ReturnSchema = {
     allowNull: true,
     field: "cancel_date",
   },
+  supervisorComments: {
+    type: DataTypes.STRING,
+    allowNull: true,
+    field: "supervisor_comments",
+  },
 };
 
 class Return extends Model {
